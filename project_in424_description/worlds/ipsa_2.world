@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sdf version="1.4">
+  <world name="default">
+    <!-- *********************INITIAL POSE OF THE CAMERA***************************** -->
+		<gui>
+      <camera name="main_cam">
+        <pose>1.15 -71.8 70 0 0.8 1.57</pose>
+      </camera>
+    </gui>
+
+    <!-- *********************GROUND AND SUN***************************** -->
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <!-- **********************WALLS**************************** -->
+    <include>
+      <uri>model://walls</uri>
+      <name>limits</name>
+      <pose>0 0 0 0 0 0</pose>
+    </include>
+
+    <!-- **********************PLATFORM**************************** -->
+    <include>
+      <uri>model://platform</uri>
+      <name>platform</name>
+      <pose>28 12 0 0 0 0</pose>
+    </include>
+
+    <!-- **********************L AND U OBSTACLES**************************** -->
+    <include>
+      <uri>model://L_box</uri>
+      <name>obs_1</name>
+      <pose>-25 -4 0 0 0 3.14</pose>
+    </include>
+
+    <include>
+      <uri>model://U_box</uri>
+      <name>obs_2</name>
+      <pose>-22 -15.5 0 0 0 1.57</pose>
+    </include>
+
+    <include>
+      <uri>model://L_box</uri>
+      <name>obs_3</name>
+      <pose>22 10.5 0 0 0 3.14</pose>
+    </include>
+
+    <include>
+      <uri>model://L_box</uri>
+      <name>obs_4</name>
+      <pose>30 6 0 0 0 1.57</pose>
+    </include>
+
+    <!-- **********************BASIC OBSTACLES**************************** -->
+    <include>
+      <uri>model://basic_box</uri>
+      <name>obs_5</name>
+      <pose>-24 14.6 0 0 0 1.57</pose>
+    </include>
+
+    <include>
+      <uri>model://basic_box</uri>
+      <name>obs_6</name>
+      <pose>-18 -27 0 0 0 1.57</pose>
+    </include>
+
+    <include>
+      <uri>model://basic_box</uri>
+      <name>obs_7</name>
+      <pose>-5.5 16 0 0 0 1.57</pose>
+    </include>
+
+    <include>
+      <uri>model://basic_box</uri>
+      <name>obs_8</name>
+      <pose>-2 -20 0 0 0 1.57</pose>
+    </include>
+
+    <include>
+      <uri>model://basic_box</uri>
+      <name>obs_9</name>
+      <pose>0 0 0 0 0 1.57</pose>
+    </include>
+
+    <include>
+      <uri>model://basic_box</uri>
+      <name>obs_10</name>
+      <pose>22 -10 0 0 0 1.57</pose>
+    </include>
+
+    <include>
+      <uri>model://basic_box</uri>
+      <name>obs_11</name>
+      <pose>22 0 0 0 0 1.57</pose>
+    </include>
+
+    <include>
+      <uri>model://basic_box</uri>
+      <name>obs_12</name>
+      <pose>25 17 0 0 0 1.57</pose>
+    </include>
+  </world>
+</sdf>

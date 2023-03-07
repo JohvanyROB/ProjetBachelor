@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sdf version="1.4">
+  <model name="u_box">
+    <static>true</static>
+    <link name="u_box">
+      <!-- **********************PART1*************************** -->
+      <visual name="visual_box">
+        <pose>0 0 0.5 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1 5 1</size>
+          </box>
+        </geometry>
+
+        <material>
+          <ambient>0.5 0.2 0.1 1</ambient>
+        </material>
+      </visual>
+      <collision name="collision_box">
+        <pose>0 0 0.5 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1 5 1</size>
+          </box>
+        </geometry>
+      </collision>
+
+      <!-- **********************PART2*************************** -->
+      <visual name="visual_box_2">
+        <pose>3 -2 0.5 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>5 1 1</size>
+          </box>
+        </geometry>
+
+        <material>
+          <ambient>0.5 0.2 0.1 1</ambient>
+        </material>
+      </visual>
+      <collision name="collision_box_2">
+        <pose>3 -2.5 0.5 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>5 1 1</size>
+          </box>
+        </geometry>
+      </collision>
+
+      <!-- **********************PART3*************************** -->
+      <visual name="visual_box_3">
+        <pose>6 0 0.5 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1 5 1</size>
+          </box>
+        </geometry>
+
+        <material>
+          <ambient>0.5 0.2 0.1 1</ambient>
+        </material>
+      </visual>
+      <collision name="collision_box_3">
+        <pose>6 0 0.5 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1 5 1</size>
+          </box>
+        </geometry>
+      </collision>
+    </link>
+  </model>
+</sdf>
